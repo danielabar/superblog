@@ -1,0 +1,42 @@
+name: The Curious Coder
+markdown: redcarpet
+pygments: true
+
+# defaults
+# source: .
+# destination: ./_site
+# plugins: ./_plugins
+# layouts: ./_layouts
+
+# On build, pass this directory into the compiled site folder
+# Should specify this because by default, jekyll will ignore .htaccess file because it starts with a dot
+# YAML uses square bracket notation to denote a list, can put comma separated values in list
+include: ['.htaccess']
+
+# exclude: []
+
+# Every time you build your site, jekyll deletes everything in destination folder and recompiles entire site
+# This option tells jerkyll which files/directories NOT to delete on each build
+keep_files: ['.git','.svn']
+
+# timezone: nil
+# encoding: nil
+
+# future: true
+# show_drafts: nil
+# limit_posts: 0
+# pygments: true
+
+# relative_permalinks: true
+
+# permalink: date
+# paginate_path: 'page:num'
+
+# markdown: maruku
+# markdown_ext: markdown,mkd,mkdn,markdown
+# textile_ext: textile_ext
+
+# excerpt_separator: "\n\n"
+
+# safe: false
+# watch: false # deprecated
