@@ -18,11 +18,12 @@
         <div class="site">
           <div class="header">
             <h1 class="title"><a href="{{ site.baseurl }}">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+            <a class="extra" href="{{ site.baseurl }}">home</a>
             <span class="extra">{{ site.time | date_to_string }}</span>
           </div>
 
           <div class="debug">
+            <p><strong><em>DEBUG</em></strong></p>
             <p>site.baseurl is {{ site.baseurl }}</p>
             <p>site.url is {{ site.url }}</p>
           </div>

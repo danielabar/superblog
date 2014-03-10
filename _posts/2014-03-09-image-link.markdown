@@ -9,7 +9,7 @@ excerpt: This is an override of the jekyll excerpt because I don't want an image
 ---
 
 Here's an image for you:
-<img src="{{ site.url }}/images/{{ page.image_file }}" alt="{{ page.image_alt }}">
+<img src="{{ site.baseurl }}/images/{{ page.image_file }}" alt="{{ page.image_alt }}">
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
