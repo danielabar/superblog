@@ -2,7 +2,17 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<!-- Use Liquid downcase filter to make all page titles using this layout lower case -->
+<h2>{{ page.title | downcase }}</h2>
+
 {{ content }}
 
-<a href="{{ site.url }}/audio/{{ page.audio_file }}">Download out audio file for this podcast!</a>
+<!--
+  Not every post using this layout may have an audio_file.
+  Use a Liquid if/else tags to prevent the link from being rendered in this case.
+ -->
+{% if page.audio_file %}
+  <a href="{{ site.url }}/audio/{{ page.audio_file }}">Download out audio file for this podcast!</a>
+{% else %}
+  <em>Sorry, there is no audio file for this post.</em>
+{% endif %}
