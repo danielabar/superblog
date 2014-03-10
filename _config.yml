@@ -40,6 +40,9 @@ keep_files: ['.git','.svn']
 # safe: false
 # watch: false # deprecated
 
+# Trying to get links and css working on gh-pages
+baseurl: /superblog
+
 # Third Party Plugin - RSS Generator
 name: The Curious Coder - Not a Real Blog
 url: http://localhost:4000/
